@@ -68,6 +68,8 @@ tracked <- tryCatch(
 )
 data_pattern <- "\\.(xlsx|xls|xlsm|xlsb|csv|tsv|RData|Rdata|rda|rds|sav|dta|parquet|feather|db|sqlite|pdf|docx|pptx|ppt)$"
 data_files <- grep(data_pattern, tracked, value = TRUE, ignore.case = TRUE)
+# docs/ 下的 CSV 是脚本清单与包版本快照，属于文档而非数据
+data_files <- data_files[!grepl("^docs/", data_files)]
 cat("Git 跟踪文件        :", length(tracked), "\n")
 cat("数据/文档二进制文件 :", length(data_files), "（应为 0）\n")
 if (length(data_files)) cat("  -", paste(data_files, collapse = "\n  - "), "\n")

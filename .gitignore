@@ -19,6 +19,9 @@
 *.db
 *.sqlite
 
+# docs 下的 CSV 是脚本清单/包版本快照，不是数据
+!docs/*.csv
+
 # 数据目录（只保留说明文件）
 data/*
 !data/README.md
