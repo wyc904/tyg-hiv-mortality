@@ -126,4 +126,4 @@ Sys.setenv(MIMIC_DB_PASSWORD = "your_password")
 
 ## 6. 校验
 
-整理后已用 R 4.4.0 对 54 个 R 文件（49 个分析脚本 + `00_setup.R` + `packages.R` + `tools/build_docs.R` + `tools/audit_repo.R` + `tools/make_graphical_abstract.R`）做 `parse()` 语法检查，全部通过；`tools/audit_repo.R` 的仓库自检结论为 **PASS**。`parse()` 只验证语法，不代表脚本能在缺少数据/内存对象时直接运行。
+整理后已用 R 4.4.0 对 53 个 R 文件（49 个分析脚本 + `00_setup.R` + `packages.R` + `tools/build_docs.R` + `tools/audit_repo.R`）做 `parse()` 语法检查，全部通过；`tools/audit_repo.R` 的仓库自检结论为 **PASS**。`parse()` 只验证语法，不代表脚本能在缺少数据/内存对象时直接运行。
