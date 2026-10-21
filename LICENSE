@@ -1,0 +1,50 @@
+Academic Research License (Non-Commercial)
+Version 1.0
+
+Copyright (c) 2026 wyc904
+
+This license applies to the source code and documentation in this repository
+(the "Software"). It does NOT apply to any raw, intermediate, or patient-level
+data, which are not included in this repository.
+
+Permission is hereby granted, free of charge, to any academic researcher or
+non-profit academic institution, to use, copy, modify, merge, publish,
+distribute, and sublicense the Software for non-commercial academic research,
+teaching, and reproducibility, subject to the following conditions:
+
+1. Attribution
+   Any use, reproduction, modification, or distribution of the Software, in
+   whole or in part, must retain this license and give appropriate credit to
+   the author. Academic publications that use the Software should cite the
+   associated manuscript and this repository.
+
+2. Non-commercial use
+   The Software may not be used, in whole or in part, for commercial purposes,
+   including but not limited to use in commercial products, paid services,
+   consulting, or proprietary research, without prior written permission from
+   the copyright holder.
+
+3. No patient data
+   This license grants no rights to any patient-level or otherwise restricted
+   data. Data access, if any, is governed by separate ethics approval and data
+   use agreements.
+
+4. Redistribution
+   Redistributions of the Software or modified versions must include a copy of
+   this license and clearly indicate any changes made. You may not impose
+   additional legal terms that restrict others from exercising the rights
+   granted by this license.
+
+5. No warranty
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL
+   THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
+   FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+   DEALINGS IN THE SOFTWARE.
+
+6. Commercial licensing
+   For commercial use, collaboration, or any use not covered above, please
+   contact the copyright holder through the repository's issue tracker:
+   https://github.com/wyc904/tyg-hiv-mortality

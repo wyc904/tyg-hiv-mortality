@@ -1,0 +1,30 @@
+# Citation metadata for this repository.
+# TODO: 正式引用前，请把 authors 中的 name 替换为真实姓名/单位，
+#       或改为 family-names + given-names + affiliation + orcid。
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated manuscript and this repository."
+title: "TyG index and 28-day mortality in hospitalized people with HIV: analysis code"
+type: software
+authors:
+  - name: "wyc904"
+repository-code: "https://github.com/wyc904/tyg-hiv-mortality"
+url: "https://github.com/wyc904/tyg-hiv-mortality"
+abstract: >-
+  R analysis code for a single-centre retrospective cohort study evaluating the
+  association between the triglyceride-glucose (TyG) index and 28-day mortality
+  in hospitalized people with HIV. The repository covers data harmonisation,
+  TyG derivation and grouping, descriptive analyses, Cox / Kaplan-Meier /
+  restricted cubic spline models, ROC / AUC / DeLong / NRI-IDI / decision-curve
+  analyses, subgroup and forest plots, and cytokine standardisation and
+  visualisation. Raw data are not included for patient-privacy reasons.
+keywords:
+  - TyG index
+  - HIV
+  - 28-day mortality
+  - survival analysis
+  - clinical research
+  - R
+license: "Other"
+license-url: "https://github.com/wyc904/tyg-hiv-mortality/blob/main/LICENSE"
+version: "1.1.0"
+date-released: "2026-10-21"
