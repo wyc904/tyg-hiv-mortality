@@ -1,10 +1,10 @@
 # 绘图脚本与图形目录
 
-除 [`figures/graphical-abstract.png`](../figures/graphical-abstract.png)（仓库展示用图形摘要）外，本仓库**不收录运行生成的图片**，只保留绘图代码。所有图形均由脚本在本地运行后生成，输出到工作目录（默认数据目录）或 `output/`。
+除 [`figures/graphical-abstract.png`](../figures/graphical-abstract.png)（论文官方图形摘要）外，本仓库**不收录运行生成的图片**，只保留绘图代码。所有图形均由脚本在本地运行后生成，输出到工作目录（默认数据目录）或 `output/`。
 
 | 图形 | 脚本 | 输出文件 | 数据来源 |
 |---|---|---|---|
-| 图形摘要（Graphical abstract） | `tools/make_graphical_abstract.R` | `figures/graphical-abstract.png` | 论文 Table 1 / Table 3 / Table 4 聚合结果 |
+| 图形摘要（官方 Graphical abstract） | —（论文 PDF 第 2 页，BioRender） | `figures/graphical-abstract.png` | 论文 PDF；Wu et al., Front Med 2026;12:1688334 |
 | TyG × CD4 四格 28 天死亡率热图 | `scripts/03_descriptive/tyg热图绘制.R` | `tyg_cd4_heatmap.png`<br>`tyg_cd4_heatmap.pdf`<br>`tyg_cd4_heatmap_data.csv` | `1300-hiv.xlsx` |
 | CD4 与 28 天死亡的预测概率曲线 | `scripts/03_descriptive/8-绘制线性相关.R` | 屏幕输出（`ggsave` 被注释） | `tyg-1300-hiv.xlsx` |
 | TYGCD4 四组 28 天 KM 曲线（含 risk table） | `scripts/04_survival/6-KM1.R` | 屏幕输出（未保存） | `tyg-1300-hiv.xlsx` |

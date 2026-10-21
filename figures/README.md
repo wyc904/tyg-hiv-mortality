@@ -2,13 +2,14 @@
 
 ## `graphical-abstract.png`
 
-- **来源**：由 [`tools/make_graphical_abstract.R`](../tools/make_graphical_abstract.R) 生成。
-- **数据**：Wu et al., *Frontiers in Medicine* 2026;12:1688334 的 Table 1 / Table 3 / Table 4 聚合结果。
-- **性质**：为本代码仓库展示而绘制的图形摘要；**原文没有出版社正式图形摘要**，本图不代表期刊官方材料。
-- **复现**：
+- **来源**：论文 PDF 第 2 页的官方 **GRAPHICAL ABSTRACT**（图注标注 “Figure created with BioRender.com”），已按作者授权直接使用。
+- **论文**：Wu et al., *Frontiers in Medicine* 2026;12:1688334，DOI `10.3389/fmed.2025.1688334`（CC BY 4.0）。
+- **性质**：出版社/作者提供的正式图形摘要，不是重绘版。
+- **提取方式**（需自备论文 PDF，PDF 不入库）：
 
   ```bash
-  Rscript tools/make_graphical_abstract.R
+  pdfimages -png -p -f 2 -l 2 "2023210330-吴永昌-SCI论文1.pdf" graphical-abstract
   ```
 
-- **版权**：图片由本仓库作者绘制；论文本身为 CC BY 4.0，代码仓库采用 Academic Non-Commercial License（见根目录 `LICENSE`）。
+  该页只包含这一张整页图片，提取结果为 `2953 × 2517` PNG。
+- **版权**：论文为 CC BY 4.0；本仓库代码采用 Academic Non-Commercial License（见根目录 `LICENSE`），图片版权归论文作者/期刊所有，使用时请引用原文。

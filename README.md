@@ -6,7 +6,7 @@
 
 ![Graphical abstract](figures/graphical-abstract.png)
 
-*图形摘要由本仓库根据论文 Table 1 / Table 3 / Table 4 的聚合结果重绘，用于代码仓库展示；原文没有出版社正式图形摘要。来源：Wu et al., Front Med 2026;12:1688334（CC BY）。*
+*论文官方图形摘要（Graphical Abstract，PDF 第 2 页；Figure created with BioRender.com）。来源：Wu et al., Front Med 2026;12:1688334（CC BY 4.0）。*
 
 > [!IMPORTANT]
 > **数据与隐私**
@@ -110,7 +110,7 @@ HIV 感染者常合并代谢紊乱、慢性炎症和机会性感染，胰岛素�
 ├── data/README.md                  # 数据放置说明（不含数据）
 ├── figures/
 │   ├── README.md                   # 图片来源与复现说明
-│   └── graphical-abstract.png      # 图形摘要（由 tools/ 生成）
+│   └── graphical-abstract.png      # 论文官方图形摘要（PDF 第 2 页）
 ├── docs/
 │   ├── README.md                   # 文档导航
 │   ├── code-index.md               # 49 个脚本的完整索引（自动生成）
@@ -140,7 +140,6 @@ HIV 感染者常合并代谢紊乱、慢性炎症和机会性感染，胰岛素�
 │   └── 99_superseded/README.md
 ├── tools/
 │   ├── build_docs.R                # 由清单生成索引/依赖/数据清单/阶段 README
-│   ├── make_graphical_abstract.R   # 生成图形摘要
 │   └── audit_repo.R                # 仓库自检
 └── .github/workflows/r-ci.yml      # push/PR 时自动运行自检
 ```
@@ -244,7 +243,7 @@ source("packages.R")
 | 检查项 | 结果 |
 |---|---|
 | 清单脚本数 vs `scripts/` 脚本数 | 49 / 49 |
-| `parse()` 语法检查 | 54 个 R 文件，0 失败 |
+| `parse()` 语法检查 | 53 个 R 文件，0 失败 |
 | Git 跟踪数据文件 | 0 |
 | 明文凭据 | 0 |
 | 硬编码 `setwd("...")` | 0 |
@@ -318,4 +317,5 @@ This repository contains the R analysis code for a single-centre retrospective c
 
 - 2026-10-21：从本地工程 `6-tyg` 整理为纯代码仓库，共 49 个分析脚本 + `scripts/00_setup.R`；未收录任何数据文件。整理前的完整备份已在本地另行保存（未入库）。
 - 2026-10-21（第二轮）：补齐 10 个阶段 README、49 条脚本清单、依赖图、27 个外部输入清单、47 个包版本快照、变量字典、代码审查、自检脚本与 GitHub Actions；修复明确代码缺陷并记录。详细改动见 [`docs/notes.md`](docs/notes.md) 与 [`docs/code-review.md`](docs/code-review.md)。
-- 2026-10-21（第三轮）：添加发表论文信息与 Frontiers 页面链接、相关文献阅读导航、图形摘要（[`figures/graphical-abstract.png`](figures/graphical-abstract.png)，由 `tools/make_graphical_abstract.R` 生成）、BibTeX 与 `CITATION.cff` 的 `preferred-citation`；版本标记为 `v1.2.0`。
+- 2026-10-21（第三轮）：添加发表论文信息与 Frontiers 页面链接、相关文献阅读导航、图形摘要、BibTeX 与 `CITATION.cff` 的 `preferred-citation`；版本标记为 `v1.2.0`。
+- 2026-10-21（第四轮）：将图形摘要替换为论文 PDF 第 2 页的 **官方 GRAPHICAL ABSTRACT**（BioRender），删除此前的重绘脚本；版本标记为 `v1.3.0`。
