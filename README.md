@@ -218,7 +218,7 @@ Rscript tools/audit_repo.R
 
 GitHub Actions 会在每次 push / PR 时运行同一自检（`.github/workflows/r-ci.yml`）。详细的修复清单与仍需人工确认的问题见 [`docs/code-review.md`](docs/code-review.md)，自检结果见 [`docs/audit.md`](docs/audit.md)。
 
-> **重要**：本轮修复了若干明确缺陷（如热图整列求和、TyG3 被覆盖、TyGbmi4 切点、P for trend 结局口径、AUC 索引等），**部分数值会与修复前不同**。重跑后请与论文/原始结果逐项核对；原文件完整备份在 `G:\1-Project\0-script\6-tyg-backup-2026-10-21.zip`。
+> **重要**：本轮修复了若干明确缺陷（如热图整列求和、TyG3 被覆盖、TyGbmi4 切点、P for trend 结局口径、AUC 索引等），**部分数值会与修复前不同**。重跑后请与论文/原始结果逐项核对；原文件已在本地另行备份（未入库）。
 
 ---
 
@@ -254,5 +254,5 @@ This repository contains the R analysis code for a single-centre retrospective c
 
 ## 整理记录
 
-- 2026-10-21：从 `G:\1-Project\0-script\6-tyg` 整理为纯代码仓库，共 49 个分析脚本 + `scripts/00_setup.R`；未收录任何数据文件。整理前的完整备份为 `G:\1-Project\0-script\6-tyg-backup-2026-10-21.zip`。
+- 2026-10-21：从本地工程 `6-tyg` 整理为纯代码仓库，共 49 个分析脚本 + `scripts/00_setup.R`；未收录任何数据文件。整理前的完整备份已在本地另行保存（未入库）。
 - 2026-10-21（第二轮）：补齐 10 个阶段 README、49 条脚本清单、依赖图、27 个外部输入清单、47 个包版本快照、变量字典、代码审查、自检脚本与 GitHub Actions；修复明确代码缺陷并记录。详细改动见 [`docs/notes.md`](docs/notes.md) 与 [`docs/code-review.md`](docs/code-review.md)。
