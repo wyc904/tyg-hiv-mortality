@@ -11,7 +11,7 @@
 |---|---|
 | 清单脚本数 vs `scripts/` 脚本数 | 49 / 49 |
 | `parse()` 语法检查 | **54 个 R 文件，0 失败**（49 分析脚本 + `00_setup.R` + `packages.R` + 3 个 `tools/` 脚本） |
-| Git 跟踪文件 | 82 |
+| Git 跟踪文件 | 87 |
 | 数据/文档二进制文件混入（xlsx / csv / RData / rds / pdf / docx / pptx） | **0** |
 | 明文凭据残留（password / token / secret / API key） | **0** |
 | 硬编码 `setwd("...")` | **0**（统一为 `Sys.getenv("TYG_DATA_DIR", ...)`） |
