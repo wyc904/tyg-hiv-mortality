@@ -75,7 +75,7 @@
 | 检查项 | 结果 |
 |---|---|
 | 清单脚本数 vs `scripts/` 脚本数 | 49 / 49 |
-| `parse()` 语法检查 | 53 个 R 文件，0 失败（49 分析脚本 + `00_setup.R` + `packages.R` + 2 个 `tools/` 脚本） |
+| `parse()` 语法检查 | 54 个 R 文件，0 失败（49 分析脚本 + `00_setup.R` + `packages.R` + 3 个 `tools/` 脚本） |
 | Git 跟踪数据文件 | 0 |
 | 明文凭据 | 0 |
 | 硬编码 `setwd("...")` | 0（统一为 `Sys.getenv("TYG_DATA_DIR", ...)`） |

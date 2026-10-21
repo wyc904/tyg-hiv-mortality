@@ -4,6 +4,10 @@
 
 本仓库整理了单中心 HIV 住院队列的 R 分析代码，覆盖数据合并与清洗、TyG 指数计算与分组、描述性统计、Cox / KM / RCS 生存分析、ROC / AUC / DeLong / NRI-IDI / DCA 预测评价、亚组分析与森林图、细胞因子标准化与热图，以及中介效应探索。仓库只保留代码与说明文档，**不包含任何原始数据或患者身份信息**。
 
+![Graphical abstract](figures/graphical-abstract.png)
+
+*图形摘要由本仓库根据论文 Table 1 / Table 3 / Table 4 的聚合结果重绘，用于代码仓库展示；原文没有出版社正式图形摘要。来源：Wu et al., Front Med 2026;12:1688334（CC BY）。*
+
 > [!IMPORTANT]
 > **数据与隐私**
 > - 本仓库**不包含任何原始数据、中间数据或患者身份信息**。`*.xlsx`、`*.xls`、`*.csv`、`*.RData`、`*.rds` 等均未收录，并已在 `.gitignore` 中屏蔽。
@@ -41,6 +45,39 @@ HIV 感染者常合并代谢紊乱、慢性炎症和机会性感染，胰岛素�
 
 ---
 
+## 发表论文
+
+| 项目 | 内容 |
+|---|---|
+| 标题 | Prognostic value of combined stratification using TyG index and CD4+ T cell count for 28-day all-cause mortality risk in patients with HIV infection and sepsis: a retrospective cohort study |
+| 作者 | Yongchang Wu, Jiejing Chen, Yu Meng, Mingyue Ren, Zhenyi Zou, Linghua Li, Xilong Deng, Yueping Li |
+| 期刊 | *Frontiers in Medicine*, 2026;12:1688334 |
+| 时间 | Received 21 Aug 2025 · Accepted 15 Dec 2025 · Published 12 Jan 2026 |
+| DOI | [10.3389/fmed.2025.1688334](https://doi.org/10.3389/fmed.2025.1688334) |
+| 全文 | [Frontiers 文章页面](https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1688334/full) |
+| PubMed | [PMID 41601726](https://pubmed.ncbi.nlm.nih.gov/41601726/) · PMCID PMC12832338 |
+| 论文许可 | CC BY 4.0（开放获取） |
+| 代码许可 | Academic Non-Commercial License（见 [`LICENSE`](LICENSE)） |
+
+---
+
+## 相关文献（阅读导航）
+
+> 下表为相关文献的**要点摘录**（非原文摘要全文），仅用于阅读导航；版权归原作者，DOI 链接指向出版社页面。
+
+| 文献 | 与本研究的关联 |
+|---|---|
+| Rudd KE, et al. Global, regional, and national sepsis incidence and mortality, 1990–2017. *Lancet*. 2020;395:200–211. [DOI](https://doi.org/10.1016/S0140-6736%2819%2932989-7) | 全球脓毒症疾病负担与死亡规模，说明早期风险分层的公共卫生意义。 |
+| Singer M, et al. The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). *JAMA*. 2016;315:801–810. [DOI](https://doi.org/10.1001/jama.2016.0287) | Sepsis-3 定义（疑似感染 + SOFA ≥ 2）是本队列纳入标准的基础。 |
+| Lou J, et al. A retrospective study utilized MIMIC-IV database to explore the potential association between triglyceride-glucose index and mortality in critically ill patients with sepsis. *Sci Rep*. 2024;14:24081. [DOI](https://doi.org/10.1038/s41598-024-75050-8) | 重症脓毒症中 TyG 与死亡风险相关，支持 TyG 作为代谢风险标志。 |
+| Zheng R, et al. Association between triglyceride-glucose index and in-hospital mortality in critically ill patients with sepsis: analysis of the MIMIC-IV database. *Cardiovasc Diabetol*. 2023;22:307. [DOI](https://doi.org/10.1186/s12933-023-02041-w) | TyG 与脓毒症住院死亡独立相关，但单独判别能力有限，提示需要联合免疫指标。 |
+| Grinspoon S, Carr A. Cardiovascular risk and body-fat abnormalities in HIV-infected adults. *N Engl J Med*. 2005;352:48–62. [DOI](https://doi.org/10.1056/NEJMra041811) | HIV 感染与体脂异常、代谢紊乱及心血管风险增加相关。 |
+| Obare LM, et al. Inflammation in HIV and its impact on atherosclerotic cardiovascular disease. *Circ Res*. 2024;134:1515–1545. [DOI](https://doi.org/10.1161/CIRCRESAHA.124.323891) | 慢性炎症是 HIV 感染者“代谢-免疫轴”的核心机制之一。 |
+| Non LR, Escota GV, Powderly WG. HIV and its relationship to insulin resistance and lipid abnormalities. *Transl Res*. 2017;183:41–56. [DOI](https://doi.org/10.1016/j.trsl.2016.12.007) | HIV 及 ART 相关胰岛素抵抗/血脂异常，为 TyG 的生物学基础提供支持。 |
+| Boomer JS, et al. Immunosuppression in patients who die of sepsis and multiple organ failure. *JAMA*. 2011;306:2594–2605. [DOI](https://doi.org/10.1001/jama.2011.1829) | 脓毒症致死与 CD4+ T 细胞耗竭/免疫抑制相关，支持 CD4 分层的合理性。 |
+
+---
+
 ## 代码分类
 
 脚本按分析阶段分为 10 类，每个目录都有独立 README：
@@ -71,6 +108,9 @@ HIV 感染者常合并代谢紊乱、慢性炎症和机会性感染，胰岛素�
 ├── CITATION.cff                    # 机器可读引用信息
 ├── packages.R                      # 依赖包一键安装
 ├── data/README.md                  # 数据放置说明（不含数据）
+├── figures/
+│   ├── README.md                   # 图片来源与复现说明
+│   └── graphical-abstract.png      # 图形摘要（由 tools/ 生成）
 ├── docs/
 │   ├── README.md                   # 文档导航
 │   ├── code-index.md               # 49 个脚本的完整索引（自动生成）
@@ -100,6 +140,7 @@ HIV 感染者常合并代谢紊乱、慢性炎症和机会性感染，胰岛素�
 │   └── 99_superseded/README.md
 ├── tools/
 │   ├── build_docs.R                # 由清单生成索引/依赖/数据清单/阶段 README
+│   ├── make_graphical_abstract.R   # 生成图形摘要
 │   └── audit_repo.R                # 仓库自检
 └── .github/workflows/r-ci.yml      # push/PR 时自动运行自检
 ```
@@ -203,7 +244,7 @@ source("packages.R")
 | 检查项 | 结果 |
 |---|---|
 | 清单脚本数 vs `scripts/` 脚本数 | 49 / 49 |
-| `parse()` 语法检查 | 53 个 R 文件，0 失败 |
+| `parse()` 语法检查 | 54 个 R 文件，0 失败 |
 | Git 跟踪数据文件 | 0 |
 | 明文凭据 | 0 |
 | 硬编码 `setwd("...")` | 0 |
@@ -244,9 +285,26 @@ GitHub Actions 会在每次 push / PR 时运行同一自检（`.github/workflows
 
 ## 引用与许可
 
-- **引用**：如使用本代码，请引用相关论文与本仓库；机器可读的引用信息见 [`CITATION.cff`](CITATION.cff)。
+- **引用**：如使用本代码，请引用相关论文与本仓库；机器可读的引用信息见 [`CITATION.cff`](CITATION.cff)（含论文的 `preferred-citation`）。
 - **许可**：本仓库采用 **Academic Research License (Non-Commercial)**，详见 [`LICENSE`](LICENSE)。允许非商业学术研究、教学与复现；商业使用需事先取得书面许可。
 - **数据**：本许可不涵盖任何患者级数据；原始数据不在仓库中，数据使用受独立伦理审批与数据使用协议约束。
+
+**论文引用（BibTeX）**
+
+```bibtex
+@article{wu2026tyg,
+  title   = {Prognostic value of combined stratification using TyG index and CD4+ T cell
+             count for 28-day all-cause mortality risk in patients with HIV infection and
+             sepsis: a retrospective cohort study},
+  author  = {Wu, Yongchang and Chen, Jiejing and Meng, Yu and Ren, Mingyue and
+             Zou, Zhenyi and Li, Linghua and Deng, Xilong and Li, Yueping},
+  journal = {Frontiers in Medicine},
+  volume  = {12},
+  pages   = {1688334},
+  year    = {2026},
+  doi     = {10.3389/fmed.2025.1688334}
+}
+```
 
 ---
 
@@ -260,3 +318,4 @@ This repository contains the R analysis code for a single-centre retrospective c
 
 - 2026-10-21：从本地工程 `6-tyg` 整理为纯代码仓库，共 49 个分析脚本 + `scripts/00_setup.R`；未收录任何数据文件。整理前的完整备份已在本地另行保存（未入库）。
 - 2026-10-21（第二轮）：补齐 10 个阶段 README、49 条脚本清单、依赖图、27 个外部输入清单、47 个包版本快照、变量字典、代码审查、自检脚本与 GitHub Actions；修复明确代码缺陷并记录。详细改动见 [`docs/notes.md`](docs/notes.md) 与 [`docs/code-review.md`](docs/code-review.md)。
+- 2026-10-21（第三轮）：添加发表论文信息与 Frontiers 页面链接、相关文献阅读导航、图形摘要（[`figures/graphical-abstract.png`](figures/graphical-abstract.png)，由 `tools/make_graphical_abstract.R` 生成）、BibTeX 与 `CITATION.cff` 的 `preferred-citation`；版本标记为 `v1.2.0`。

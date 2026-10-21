@@ -1,6 +1,5 @@
 # Citation metadata for this repository.
-# TODO: 正式引用前，请把 authors 中的 name 替换为真实姓名/单位，
-#       或改为 family-names + given-names + affiliation + orcid。
+# 软件作者暂用 GitHub 账号 wyc904；论文的完整作者见 preferred-citation。
 cff-version: 1.2.0
 message: "If you use this code, please cite the associated manuscript and this repository."
 title: "TyG index and 28-day mortality in hospitalized people with HIV: analysis code"
@@ -26,5 +25,34 @@ keywords:
   - R
 license: "Other"
 license-url: "https://github.com/wyc904/tyg-hiv-mortality/blob/main/LICENSE"
-version: "1.1.0"
+version: "1.2.0"
 date-released: "2026-10-21"
+preferred-citation:
+  type: article
+  title: >-
+    Prognostic value of combined stratification using TyG index and CD4+ T cell
+    count for 28-day all-cause mortality risk in patients with HIV infection and
+    sepsis: a retrospective cohort study
+  authors:
+    - family-names: "Wu"
+      given-names: "Yongchang"
+    - family-names: "Chen"
+      given-names: "Jiejing"
+    - family-names: "Meng"
+      given-names: "Yu"
+    - family-names: "Ren"
+      given-names: "Mingyue"
+    - family-names: "Zou"
+      given-names: "Zhenyi"
+    - family-names: "Li"
+      given-names: "Linghua"
+    - family-names: "Deng"
+      given-names: "Xilong"
+    - family-names: "Li"
+      given-names: "Yueping"
+  journal: "Frontiers in Medicine"
+  volume: 12
+  start: 1688334
+  year: 2026
+  doi: "10.3389/fmed.2025.1688334"
+  url: "https://doi.org/10.3389/fmed.2025.1688334"
